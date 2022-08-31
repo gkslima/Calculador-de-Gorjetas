@@ -1,0 +1,78 @@
+/* @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+    para importar a fonte Lato */
+
+:root  {
+    --primary-color: bisque;
+    --second-color: brown;
+    --tertiary-color: NavajoWhite;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto; /* margem igual em todos os lados, centralizou */
+    background-color: var(--tertiary-color);
+    box-shadow: 5px 5px 5px SandyBrown;
+    border-radius: 20px;
+}
+
+.title {
+    background-color: var(--second-color);
+    color: black;
+    padding: 20px;
+    text-transform: uppercase; /* todas as letras maiúsculas */
+    font-size: 18px;
+    font-weight: normal;
+    /* radius arredonda a borda */
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    text-align: center; /* centraliza o texto */
+}
+
+.tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.formInput {
+    background-color: white;
+    width: 40px;
+    padding: 5px /* top */ 5px /* right */ 8px /* botton */ 8px /* left */;
+
+}
+.formInput:focus {
+    border: 1px solid var(--second-color); /* quando ativada vai ficar com borda marrom */
+    outline: none;
+}
+
+.formSelect {
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block; /* como bloco */
+    margin: 30px auto; 
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: black;
+}
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
