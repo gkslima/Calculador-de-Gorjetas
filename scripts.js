@@ -20,11 +20,14 @@ function calculateTip(event){
 
     /* calcular a gorjeta */
     let total = (bill * serviceQual) / numOfPeople;
-    /* fixar somente 2 casas depois da vírgula */
-    total = total.toFixed(2);
+
+    // formatação da moeda BR
+    total = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); // .toFixed(2);
     document.getElementById('tip').innerHTML = total;
+
     /* exibir o total */
     document.getElementById('totalTip').style.display = "block"
+
 }
 
 /* desaparece enquanto não é usado */
